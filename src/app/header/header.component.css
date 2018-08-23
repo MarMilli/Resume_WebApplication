@@ -1,5 +1,36 @@
+.timer {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3px 0 3px 0;
+}
+
+.custom {
+  list-style: none;
+  margin: 6px;
+  padding: 0;
+  display: block;
+}
+
+.custom li {
+  display: inline-block;
+}
+
+.custom li span {
+  min-width: 80px;
+  font-size: 50px;
+  color: white;
+  background: #2e6c8e;
+  padding: 20px;
+  display: inline-block;
+}
+
+.countdown li div {
+  margin: 0;
+  color: white;
+}
+
 .header {
-  padding: 0 50px; }
+  padding: 0 50px;
+}
 
 .header__section {
   display: flex;
@@ -9,21 +40,25 @@
   justify-content: center;
 
 }
+
 .header__logo {
   display: flex;
   justify-content: center;
-  align-items:center;
-  margin:2rem 0 2rem 0;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
 }
-.header__logo  .logotype {
+
+.header__logo .logotype {
   width: 200px;
   position: absolute;
   z-index: 1;
 }
-.header__logo  .wing_l {
+
+.header__logo .wing_l {
   width: 200px;
   padding-right: 1.8em;
 }
+
 .header__logo .wing_r {
   width: 200px;
   padding-left: 1.8em;

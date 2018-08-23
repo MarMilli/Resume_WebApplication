@@ -9,7 +9,7 @@ import { ContentComponent } from './content/content.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
   ],
   imports: [
     BrowserModule
