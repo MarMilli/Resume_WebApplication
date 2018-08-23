@@ -25,7 +25,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.info = new Info(
       'До дня, когда меня пригласят на работу в Сибирские интеграционные системы, осталось:',
       'Марина Николаевна Коротенко',
-      'assets/image/design/logo.png'
+      'assets/image/design/logo.png',
+      'Marinochka'
     );
 
   }
