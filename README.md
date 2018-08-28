@@ -1,4 +1,4 @@
-# РџСЂРёР»РѕР¶РµРЅРёРµ-СЂРµР·СЋРјРµ РІ РєР°С‡РµСЃС‚РІРµ РґРѕРјР°С€РЅРµРіРѕ Р·Р°РґР°РЅРёСЏ РїРѕ РєСѓСЂСЃСѓ "Angular"
+# Приложение-резюме в качастве домашнего задания по курсу "Angular"
 # MyAngularrApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.

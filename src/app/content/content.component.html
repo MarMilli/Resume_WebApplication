@@ -17,41 +17,45 @@
         <label for='step-5'>Контакты</label>
       </div>
 
-      <input checked='checked' id='step-1' name='step' type='radio'>
-      <input id='step-2' name='step' type='radio'>
-      <input id='step-3' name='step' type='radio'>
-      <input id='step-4' name='step' type='radio'>
-      <input id='step-5' name='step' type='radio'>
+      <input id='step-1' name='step' type='radio' (click)=" showOrHide('step-1') ">
+      <input id='step-2' name='step' type='radio' (click)=" showOrHide('step-2') ">
+      <input id='step-3' name='step' type='radio' (click)=" showOrHide('step-3') ">
+      <input id='step-4' name='step' type='radio' (click)=" showOrHide('step-4') ">
+      <input id='step-5' name='step' type='radio' (click)=" showOrHide('step-5') ">
 
-      <div class='progress_inner__bar'></div>
-      <div class='progress_inner__bar--set'></div>
-      <div class='progress_inner__tabs'>
-        <div class='tab tab-0'>
+      <div class='progress_inner__tabs' [ngSwitch]="valuerez">
+        <div class='tab' *ngSwitchCase="'step-1'">
           <h1>Обо мне</h1>
           <p>Мне 24 года, из них я 17 лет учусь, сначала 11 лет в школе, потом 5 лет в университете, а сейчас вот на
             курсы по Angular записалась.</p>
         </div>
-        <div class='tab tab-1'>
+        <div class='tab' *ngSwitchCase="'step-2'">
           <h1>Навыки</h1>
-          <p>Могу в HTML, CSS и немного в JavaScript. Ну и куда же без перечисления языков, которые я изучала в
-            университете: С++.</p>
+          <p *ngFor="let skill of aboutMe.skills"> {{skill}} </p>
+          <input [(ngModel)]="inputValue">
+          <button (click)="addSkill(inputValue)">Добавить навык!</button>
         </div>
-        <div class='tab tab-2'>
+        <div class='tab' *ngSwitchCase="'step-3'">
           <h1>Опыт работы</h1>
           <p>Хотелось бы выделить СОШ, в которой я смогла продержаться ровно 2 месяца, и уйти, решив что мои дети
             однозначно будут на домашнем обучении.</p>
         </div>
-        <div class='tab tab-3'>
+        <div class='tab' *ngSwitchCase="'step-4'">
           <h1>Немного о том, какая я многогранная личность</h1>
-          <p>Очень.</p>
+          <p *ngFor="let hob of aboutMe.hobbies"> {{hob}} </p>
         </div>
-        <div class='tab tab-4'>
+        <div class='tab' *ngSwitchCase="'step-5'">
           <h1>Контакты</h1>
           <p>Более полную информацию обо мне вы сможете найти на <a
             href="https://krasnoyarsk.hh.ru/resume/e9a98408ff056031610039ed1f7456584b5a41">HH</a>, <a
             href="https://vk.com/marinivanov">VK</a>, <a href="https://www.facebook.com/marinemillionaire">FB</a> или
             написав мне лично в <a href="tg://resolve?domain=MarineMillionaire">Telegram</a> @MarineMillionaire.</p>
         </div>
+        <div class='tab' *ngSwitchDefault>
+          <h1>Здравствуйте!</h1>
+          <p>Чтобы узнать немного информации обо мне вам нужно нажать на одну из вкладок выше.</p>
+        </div>
+
       </div>
     </div>
   </div>
