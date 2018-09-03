@@ -1,36 +1,9 @@
-<div class="timer">
-  <div>{{info.event}}</div>
-  <ul class="custom">
-    <li>
-      <span>{{days}}</span>
-      <div>{{daysValue}}</div>
-    </li>
-    <li>&nbsp;</li>
-    <li>
-      <span>{{hours}}</span>
-      <div>{{hoursValue}}</div>
-    </li>
-    <li>&nbsp;</li>
-    <li>
-      <span>{{minutes}}</span>
-      <div>{{minutesValue}}</div>
-    </li>
-    <li>&nbsp;</li>
-    <li>
-      <span>{{seconds}}</span>
-      <div>{{secondsValue}}</div>
-    </li>
-  </ul>
-</div>
-
-
-
 <header class="header">
   <div class="header__section">
     <div class="header__logo">
-      <img class="wing_l" src="assets/image/design/ala-izq.svg" alt='Wing'>
-      <img class="logotype" [src]="info.photoLogo" [alt]="info.altPhotoLogo">
-      <img class="wing_r" src="assets/image/design/ala-der.svg" alt='Wing'>
+      <img class="wing_l" src="assets/image/design/ala-izq.svg" alt='wing'>
+      <img class="logotype" [src]="info.photoLogo" [alt]="info.name">
+      <img class="wing_r" src="assets/image/design/ala-der.svg" alt='wing'>
     </div>
     <header class="header__info">
       <p>{{info.name}}</p>
